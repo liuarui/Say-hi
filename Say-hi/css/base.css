@@ -1,0 +1,184 @@
+.content {
+    display: block;
+    width: 800px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.content p:nth-child(1) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 62px;
+    font-family: "微软雅黑";
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.content p:nth-child(2) {
+    margin: 36px 0px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.content a {
+    font-family: "微软雅黑";
+    display: block;
+    width: 168px;
+    height: 56px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid white;
+    color: #ffffff;
+    line-height: 56px;
+    font-size: 16px;
+}
+
+.content a:hover {
+    border: 2px solid lightblue;
+    color: lightblue;
+    text-decoration: none;
+}
+header{
+    position: relative;
+}
+/* 查询框 */
+.translate {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+    width: 710px;
+    height: 157px;
+    padding: 16px 18px 0px 24px;
+    
+}
+#translateVideoBlock{
+    display: none;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+    width: 710px;
+    height: 157px;
+}
+/* 图像识别部分 */
+#video{
+    position: absolute;
+    top: -20%;
+    left: -20%;
+}
+#canvas {
+    visibility: hidden;
+    position: absolute;
+    top: -20%;
+    left: -20%;
+}
+#openVideo {
+    position: absolute;
+    top: 290px;
+    left: -142px;
+}
+#capture {
+    position: absolute;
+    top: 290px;
+    left: -21px;
+}
+#over {
+    position: absolute;
+    top: 290px;
+    left: 82px; 
+}
+#resultVideo {
+    position: absolute;
+    top: 20px;
+    left: 500px; 
+    font-size: 25px;
+    font-family: "微软雅黑";
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 30%;
+    padding: 20px 0;
+}
+
+/* 选择文件美化 */
+.file {
+    position: relative;
+    top: 40px;
+    left: 30%;
+    display: inline-block;
+    background: #ffffff;
+    color: #000;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 40px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #000000;
+    text-decoration: none;
+    cursor:pointer;
+}
+.file input:hover {
+    cursor:pointer;
+}
+.button-new{
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+
+}
+#return{
+    position: absolute;
+    top:60px;
+    left:75%;
+    width: 45px;
+    height: 45px;
+}
+#return:hover{
+    cursor:pointer;
+}
+#videoReturn{
+    position: absolute;
+    top: 293px;
+    left: 42%;
+    width: 45px;
+    height: 45px;
+}
+#videoReturn:hover{
+    cursor:pointer;
+}
+
+/* 动画 */
+#loading{
+    position: absolute;
+    top:200px;
+    left: 200px;
+    font-size: 25px;
+    font-family: "微软雅黑";
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 30%;
+    padding: 20px 0;
+
+}

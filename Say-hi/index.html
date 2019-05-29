@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--三大标签-->
+    <title>Say Hi 你的手语学习助手</title>
+    <meta name="keywords" content="Say Hi 手语 学习 人工智能 翻译" />
+    <meta name="description" content="Say Hi 手语学习网 " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--网站小图标-->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 初始化css -->
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
+</head>
+
+<body>
+    <header>
+        <!-- 内容 -->
+        <div class="content" id="content">
+            <p>Say Hi， 见你所见</p>
+            <p> 让世界看见年轻的力量 </p>
+            <a href="javascript:void(0);" id="shitu-btn">识图一下</a>
+        </div>
+        <!-- 翻译块。默认隐藏 -->
+        <div class="translate" id="translate">
+            <form id="translateForm">
+                <a href="javascript:;" class="file">选择文件(仅支持jpg格式)
+                    <input type="file" size="30" name="photo">
+                </a>
+                <a href="javascript:;" class="file" onclick="login()">提交
+                    <input type="button" value="提交" class="button-new">
+                </a>
+            </form>
+            <a href="javascript:;" class="file" id="translateVideo">视频识别
+            </a>
+            <img src="./images/close.png" id="return" alt="关闭">
+        </div>
+        <!-- 视频识别块 -默认隐藏 -->
+        <div id="translateVideoBlock">
+            <video id="video" width="480" height="320" ></video>
+            <a href="javascript:;" class="file" id="openVideo">开启摄像头</a>
+            <canvas id="canvas" width="480" height="320"></canvas>
+            <a href="javascript:;" class="file" id="capture">开始识别</a>
+            <a href="javascript:;" class="file" id="over">结束识别</a>
+            <img src="./images/close.png" id="videoReturn" alt="关闭">
+        </div>
+    </header>
+    <!-- //轮播图模块 -->
+    <div class="pb-carouselWarp demo1">
+        <ul class="pb-carousel">
+            <li class="pb-this"><img src="images/1.jpg" alt="" /></li>
+            <li><img src="images/2.jpg" alt="" /></li>
+            <li><img src="images/3.jpg" alt="" /></li>
+            <li><img src="images/4.jpg" alt="" /></li>
+            <li><img src="images/5.jpg" alt="" /></li>
+        </ul>
+        <ul class="pb-carousel-ind">
+            <li class="pb-this"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <button class="pb-arrow pb-arrow-prev"></button>
+        <button class="pb-arrow pb-arrow-next" id="aa"></button>
+    </div>
+</body>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="./js/carousel.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/video.js"></script>
+<!-- 逻辑实现js最后引入 -->
+<script src="./js/index.js"></script>
+<script src="./js/ajax.js"></script>
+</html>
