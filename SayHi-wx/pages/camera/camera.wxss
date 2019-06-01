@@ -1,0 +1,11 @@
+/* pages/camera/camera.wxss */
+#start{
+  display: inline-block;
+  width: 50%;
+
+}
+
+#stop{
+  display: inline-block;
+  width: 50%;
+}

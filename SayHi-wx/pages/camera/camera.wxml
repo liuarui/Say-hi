@@ -1,0 +1,8 @@
+<!--pages/camera/camera.wxml-->
+<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 150px;"></camera>
+<button id="start" type="primary" bindtap="start">开始识别</button>
+<button id="stop" type="primary" bindtap="stop">结束识别</button>
+<text>识别结果为：{{result}}</text>
+
+<view>识别的图片预览:</view>
+<image mode="widthFix" src="{{src}}"></image>

@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+ <navigator class="nav" url='../camera/camera'>开始识别！</navigator>
+</view>
