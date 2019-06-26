@@ -1,6 +1,5 @@
 //摄像头权限已获取标识位 
 var cameraFlag = false;
-
 //访问用户媒体设备的兼容方法
 function getUserMedia(constraints, success, error) {
     if (navigator.mediaDevices.getUserMedia) {

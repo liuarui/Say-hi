@@ -61,7 +61,7 @@ window.onload = function () {
         $(translate).fadeOut("fast");
         $(translateVideoBlock).fadeIn("fast");
         //发起摄像头使用请求
-        openCamera();
+        // openCamera();
     }
     //开启摄像头按钮功能
     openVideo.onclick = function () {
@@ -79,7 +79,7 @@ window.onload = function () {
         //videoAjax函数功能：将canvas转成base64格式，使用ajax发送到后端,每隔0.2s发送一次识别请求
         videoCapture = setInterval(() => {
             videoAjax();
-        }, 5000)
+        }, 6000)
         resultVideo.innerHTML = '识别中......';
 
         $("#translateVideoBlock")[0].appendChild(resultVideo);

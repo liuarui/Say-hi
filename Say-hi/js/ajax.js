@@ -21,7 +21,7 @@ function login() {
     $.ajax({
         type: "post",
         data: formData,
-        url: 'http://9qhqdu.natappfree.cc/translate',
+        url: 'http://t3mjhq.natappfree.cc/translate',
         dataType: 'json',
         contentType: false, //必须
         processData: false, //必须
@@ -50,11 +50,11 @@ function videoAjax() {
     //过滤头部
     var arr = strDataURI.split(",");
     // console.log(strDataURI);
-    console.log(arr[1]);
+    // console.log(arr[1]);
     $.ajax({
         type: "post",
         data: arr[1],
-        url: 'http://e7k7fj.natappfree.cc/translate',
+        url: 'http://t3mjhq.natappfree.cc/translatehd',
         dataType: 'json',
         contentType: false, //必须
         processData: false, //必须
